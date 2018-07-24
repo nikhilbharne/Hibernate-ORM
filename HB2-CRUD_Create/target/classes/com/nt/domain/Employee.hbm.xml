@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-mapping package="com.nt.domain">
+	<class name="com.nt.domain.Employee" table="EMPLOYEE1">
+		<id name="eid" column="EID" type="int" length="7">
+			<generator class="increment" />
+		</id>
+
+		<property name="firstName" column="FIRSTNAME" not-null="true"
+			type="string" length="18" />
+		<property name="lastName" column="LASTNAME" type="string"
+			length="18" />
+		<property name="salary" column="SALARY" type="double"
+			length="10" />
+	</class>
+
+</hibernate-mapping>
