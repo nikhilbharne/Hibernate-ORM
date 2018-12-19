@@ -10,6 +10,7 @@ public class SaveTest {
 
 	public static void main(String[] args) throws Exception {
 		System.out.println("main Method Started");
+		System.out.println("This is added by git");
 		Configuration cfgs = null;
 		SessionFactory sf = null;
 		Session ses = null;
