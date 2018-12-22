@@ -29,10 +29,10 @@ public class SaveTest {
 
 		// Create Domain Class Object and prepare It
 		st = new Student();
-		//st.setSid(10);
-		st.setName("Namdev");
-		st.setCourse("SOAP");
-		st.setAddress("AUR");
+		//st.setSid(104);
+		st.setName("Rani");
+		st.setCourse("B.CA");
+		st.setAddress("Nashik");
 		try {
 			tx = ses.beginTransaction();
 			idVal = (Integer) ses.save(st);
