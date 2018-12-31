@@ -6,7 +6,7 @@ import org.hibernate.cfg.Configuration;
 
 import com.ms.app.domain.Student;
 
-public class UpdateTest {
+public class DeleteTest {
 	public static void main(String[] args) throws Exception {
 		System.out.println("Hibernate Main Method");
 		Configuration cfg = null;
@@ -30,15 +30,12 @@ public class UpdateTest {
 
 		// Create Domain class Object
 		st = new Student();
-		st.setSid(6);
-		st.setName("Nehal");
-		st.setCourse("B.Tech");
-		st.setAddress("J.Nagar");
 
 		// Create Transaction object
 		try {
 			tx =ses.beginTransaction();
-			ses.update(st);
+			//ses.update(st);
+			ses.delete(Student.class);
 			tx.commit();
 			System.out.println("Student Object are Updated");
 			System.out.println(st.getSid());
